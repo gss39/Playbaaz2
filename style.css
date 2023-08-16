@@ -486,7 +486,7 @@ body {
 .job-card-title {
   font-weight: 600;
   margin-top: 16px;
-  font-size: 14px;
+  font-size: 18px;
 }
 .job-card-subtitle {
   color: var(--subtitle-color);
