@@ -469,7 +469,7 @@ body {
 }
 
 .job-card {
-  padding: 20px 16px;
+  padding: 10px 12px;
   background-color: var(--header-bg-color);
   border-radius: 8px;
   cursor: pointer;
