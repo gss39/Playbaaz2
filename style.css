@@ -492,7 +492,7 @@ body {
   color: var(--subtitle-color);
   font-size: 13px;
   margin-top: 14px;
-  line-height: 1.6em;
+  line-height: 1.9em;
 }
 .job-card-header {
   display: flex;
