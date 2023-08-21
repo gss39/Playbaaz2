@@ -1,3 +1,5 @@
+
+<?php
 $html = file_get_html('https://slashdot.org/');
 
 $articles = $html->find('article[data-fhtype="story"]');
@@ -10,3 +12,4 @@ foreach($articles as $article) {
 }
 
 print_r($items);
+?>
