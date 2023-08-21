@@ -1,15 +1,12 @@
-
 <?php
-$html = file_get_html('https://slashdot.org/');
-
-$articles = $html->find('article[data-fhtype="story"]');
-
-foreach($articles as $article) {
-    $item['title'] = $article->find('.story-title', 0)->plaintext;
-    $item['intro'] = $article->find('.p', 0)->plaintext;
-    $item['details'] = $article->find('.details', 0)->plaintext;
-    $items[] = $item;
+ 
+include('simple_html_dom.php');
+ 
+$html = file_get_html(
+'http://www.google.com/search?q='.$_POST["search"]);
+ 
+foreach($html->find('div.kCrYT') as $elements) {
+    echo $elements->plaintext;
+    break;
 }
-
-print_r($items);
 ?>
